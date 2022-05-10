@@ -70,6 +70,6 @@ process fastqc {
   shell:
   filename=f.baseName
   '''
-  
+  !{params.fastqc_path} -o !{params.output_folder} $f
   '''
 }
