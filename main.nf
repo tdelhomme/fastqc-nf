@@ -53,7 +53,7 @@ assert (params.input_folder != null) : "please provide the --input_folder option
 log.info "Input folder: ${params.input_folder}"
 log.info "Output folder: ${params.output_folder}"
 
-fastq = Channel.fromPath(params.input_folder + '/*fq.gz' )
+fastq = Channel.fromPath(params.input_folder + '/*fastq.gz' )
 
 process fastqc {
 
